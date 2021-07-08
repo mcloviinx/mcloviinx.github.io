@@ -11,12 +11,12 @@ var sqrMouseRepulsion;
 var particles = [];
 
 function loadInputs(){
-    rngParticles = configInputRange('i-particles', 'r-particles', '10', '75', '300');
-    rngParticlesSize = configInputRange('i-particles-size', 'r-particles-size', '1', '4', '20');
-    rngStrokeWeight = configInputRange('i-stroke-weight', 'r-stroke-weight', '1', '4', '20');
-    rngStrokeMinDist = configInputRange('i-stroke-mindist', 'r-stroke-mindist', '5', '75', '200');
-    rngStrokeAlpha = configInputRange('i-stroke-alpha', 'r-stroke-alpha', '1', '150', '255');
-    rngMouseRepulsion = configInputRange('i-mouse-repulsion', 'r-mouse-repulsion', '10', '50', '200');
+    rngParticles = configInputRange('i-particles', 'r-particles', '10', '300', '300');
+    rngParticlesSize = configInputRange('i-particles-size', 'r-particles-size', '1', '10', '20');
+    rngStrokeWeight = configInputRange('i-stroke-weight', 'r-stroke-weight', '1', '1', '20');
+    rngStrokeMinDist = configInputRange('i-stroke-mindist', 'r-stroke-mindist', '5', '60', '200');
+    rngStrokeAlpha = configInputRange('i-stroke-alpha', 'r-stroke-alpha', '1', '255', '255');
+    rngMouseRepulsion = configInputRange('i-mouse-repulsion', 'r-mouse-repulsion', '10', '100', '200');
     rngParticles.addEventListener('input', function(){
         if (this.value > particles.length){
             for (var i = 0; i < this.value - particles.length; i++){
