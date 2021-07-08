@@ -37,8 +37,8 @@ function loadInputs(){
 }
 function configInputRange(id, pId, min, value, max){
     var input = document.getElementById(id);
-    var attributes = ['min', 'value', 'max'];
-    var values = [min, value, max];
+    var attributes = ['max', 'value', 'min'];
+    var values = [max, value, min];
     for (i in attributes){
         input.setAttribute(attributes[i], values[i]);
     }
