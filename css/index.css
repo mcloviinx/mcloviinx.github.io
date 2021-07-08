@@ -1,0 +1,65 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+body {
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+header {   
+    flex: 0 1 auto;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row;
+}
+footer {
+    flex: 0 1 auto;
+}
+#anim-content {
+    flex: 1 1 auto;
+    background-color: gray;
+}
+.p5Canvas {
+    position: absolute;
+}
+#opc-content {
+    flex: 0 1 auto;
+}
+td {
+    min-width: 2em;
+}
+th {
+    border-bottom: 1px dashed white;
+    font-size: 1.2em;
+    text-align: left;
+}
+table {
+    padding: 0 .5em;
+}
+input {
+    width: 6em;
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: .2s;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 5px;
+    background: rgba(255, 0, 0);
+}
